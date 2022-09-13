@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <style>
+        #root{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .body{
+            width: 400px;
+            border: none;
+            background-color: grey;
+            height: 200px;
+            text-align: center;
+        }
+        .tab-btn{
+            width: 200px;
+            height: 40px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .btn-start{
+            width: 90px;
+            height: 40px;
+        }
+        .btn-stop{
+            width: 70px;
+            margin: 2px;
+            height: 40px;
+        }
+        h1{
+            text-align: center;
+        }
+        .blue{
+            color: blue;
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script type="text/babel" src="src/App.js"></script>
+    <script type="text/babel">
+       
+        ReactDOM.render(<App/>, document.getElementById("root"))
+         //Write the code rendering App component within this script tag
+    </script>
+</body>
+</html>
